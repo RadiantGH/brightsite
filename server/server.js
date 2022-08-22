@@ -3,11 +3,11 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
-app.use('/bundle.js', express.static(path.join(__dirname, '../dist/bundle.js')));
-
 app.get('/', (req, res) => {
-    res.send('test');
+    res.status(200).sendFile(path.resolve(__dirname, '../dist/index.html'));
 });
+
+app.use('/bundle.js', express.static(path.join(__dirname, '../dist/bundle.js')));
 
 //Error
 app.use('/', (req, res) => {
