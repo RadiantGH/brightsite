@@ -11,7 +11,7 @@ const Navbar = function() {
     return (
         <div>
             <p>
-                <Link to="/contact" className="routeLink">Contact</Link> | <Link to="/projects" className="routeLink">Projects</Link> | <Link to="/talks" className="routeLink">Talks</Link>
+            <Link to="/" className="routeLink">Home</Link> | <Link to="/contact" className="routeLink">Contact</Link> | <Link to="/projects" className="routeLink">Projects</Link> | <Link to="/talks" className="routeLink">Talks</Link>
             </p>
         </div>
     );

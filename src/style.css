@@ -12,7 +12,7 @@ body {
 }
 
 #main-content {
-    width: 25vw;
+    width: 30vw;
     height: 100vh;
     margin: 0 auto;
 
@@ -23,6 +23,12 @@ body {
 
 .url {
     color: #E6CE1D;
+}
+
+.article-title {
+    color: #E6CE1D;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #header {

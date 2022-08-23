@@ -25,6 +25,7 @@ root.render(
         <Route path="projects" element={<Projects />} />
         <Route path="contact" element={<Contact />} />
         <Route path="talks" element={<Talks />} />
+        <Route path="/*" element={<p>404 | The light does not reach this place.</p>} />
       </Routes>
     </div>
     </BrowserRouter>
