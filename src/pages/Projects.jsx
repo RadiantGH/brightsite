@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-  
+import ProjectArticle from '../components/ProjectArticle.jsx';
+
 const Projects = function() {
     return (
         <div>
-            <p> Projects. </p>
+            <ProjectArticle
+                article={'shard'}
+            />
         </div>
     );
 }
