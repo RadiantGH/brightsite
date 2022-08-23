@@ -2,16 +2,17 @@
 .light-yellow {color: #F4DD08}
 .bright-yellow {color: #FDEC00}
 .classy-grey {color: #403F45} */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans&display=swap');
 
 body {
     color: #403F45;
     background-color: whitesmoke;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Comfortaa', cursive;
+   line-height: 2;
 }
 
 #main-content {
-    width: 40vw;
+    width: 25vw;
     height: 100vh;
     margin: 0 auto;
 
@@ -20,8 +21,13 @@ body {
     align-items: center;
 }
 
+.url {
+    color: #E6CE1D;
+}
+
 #header {
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #top-title {
@@ -36,6 +42,10 @@ body {
     text-decoration: none;
 }
 
-.text-body {
+#home-body {
     text-align: left;
+}
+
+#talk-body {
+    text-align: center;
 }

@@ -4,12 +4,16 @@ import ReactAudioPlayer from 'react-audio-player';
 
 const Talks = function() {
     return (
-        <div>
-            <p> 2022 - JavaScript is a problem TypeScript Solved (Sponsored by SingleSprout) </p>
-            <ReactAudioPlayer
-            src='../assets/talk_typescript.mp3'
-            controls
-            />
+        <div id='talk-body'>
+            <p>
+                June 2022 <br/>
+                Sponsored by SingleSprout <br/>
+                JavaScript Is A Problem TypeScript Solved
+                <ReactAudioPlayer
+                src='api/assets/talk_typescript.mp3'
+                controls
+                />
+            </p>
         </div>
     );
 }
