@@ -13,7 +13,6 @@ body {
 
 .main-content {
     width: 30vw;
-    height: 100vh;
     margin: 0 auto;
 
     display: flex;
@@ -23,7 +22,6 @@ body {
 
 .article-content {
     width: 40vw;
-    height: 100vh;
     margin: 0 auto;
 
     display: flex;
@@ -37,6 +35,7 @@ body {
 
 .article-title {
     color: #ebb811;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
@@ -54,6 +53,10 @@ h3 {
 #header {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+}
+
+#footer {
+
 }
 
 #top-title {

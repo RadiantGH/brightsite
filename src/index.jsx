@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import SiteHeader from './components/SiteHeader.jsx';
+import SiteFooter from './components/SiteFooter.jsx';
 import Home from './pages/Home.jsx';
 import Projects from './pages/Projects.jsx';
 import Contact from './pages/Contact.jsx';
@@ -31,6 +32,7 @@ root.render(
 
         <Route path='/*' element={<p>404 | The light does not reach this place.</p>} />
       </Routes>
+      <SiteFooter/>
     </BrowserRouter>
   </React.StrictMode>
 );
