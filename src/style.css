@@ -1,0 +1,41 @@
+/* .med-yellow {color: #E6CE1D}
+.light-yellow {color: #F4DD08}
+.bright-yellow {color: #FDEC00}
+.classy-grey {color: #403F45} */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    color: #403F45;
+    background-color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#main-content {
+    width: 40vw;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header {
+    text-align: center;
+}
+
+#top-title {
+    color: #403F45;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.routeLink {
+    color: #403F45;
+    text-decoration: none;
+}
+
+.text-body {
+    text-align: left;
+}
