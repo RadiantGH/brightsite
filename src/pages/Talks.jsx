@@ -4,7 +4,8 @@ import ReactAudioPlayer from 'react-audio-player';
 
 const Talks = function() {
     return (
-        <div id='talk-body'>
+        <div className='main-content'>
+            <div id='talk-body'>
             <p>
                 June 2022 - Sponsored by SingleSprout <br/>
                 JavaScript Is A Problem TypeScript Solved
@@ -13,7 +14,9 @@ const Talks = function() {
                 controls
                 />
             </p>
+            </div>
         </div>
+        
     );
 }
 

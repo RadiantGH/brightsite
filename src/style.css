@@ -8,10 +8,10 @@ body {
     color: #403F45;
     background-color: whitesmoke;
     font-family: 'Comfortaa', cursive;
-   line-height: 2;
+    line-height: 2;
 }
 
-#main-content {
+.main-content {
     width: 30vw;
     height: 100vh;
     margin: 0 auto;
@@ -21,14 +21,34 @@ body {
     align-items: center;
 }
 
+.article-content {
+    width: 40vw;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
 .url {
-    color: #E6CE1D;
+    color: #ebb811;
 }
 
 .article-title {
-    color: #E6CE1D;
+    color: #ebb811;
     font-weight: bold;
     font-size: 20px;
+}
+
+h2 {
+    color: #ebb811;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    color: #ebb811;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #header {

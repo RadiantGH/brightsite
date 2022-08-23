@@ -12,22 +12,25 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Article_Shard from './pages/projectpages/Shard.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <div id="main-content">
       <SiteHeader/>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="talks" element={<Talks />} />
-        <Route path="/*" element={<p>404 | The light does not reach this place.</p>} />
+        <Route path='/' element={<Home />} />
+        <Route path='projects' element={<Projects />} />
+        <Route path='contact' element={<Contact />} />
+        <Route path='talks' element={<Talks />} />
+
+        {/* Articles */}
+        <Route path='shard' element={<Article_Shard/>} />
+
+        <Route path='/*' element={<p>404 | The light does not reach this place.</p>} />
       </Routes>
-    </div>
     </BrowserRouter>
   </React.StrictMode>
 );
