@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
 
 app.use('/bundle.js', express.static(path.join(__dirname, '../dist/bundle.js')));
 
+app.get('/api/assets/talk_typescript.mp3', (req, res) => {
+    res.status(200).sendFile(path.join(__dirname, '../src/assets/talk_typescript.mp3'));
+})
+
 //Error
 app.use('/', (req, res) => {
     res.status(404).send('404 not found');
