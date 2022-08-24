@@ -226,8 +226,7 @@ const Article_Shard = function() {
             <h3>Connecting Players</h3>
 
             <p>
-                For multiplayer, players establish a TCP Connection with a .NET Core game server, since Unity's scripting API also uses C#. A local MySQL server was 
-                also used as a database.
+                For multiplayer, players establish a TCP Connection with a .NET Core game server. A local MySQL server was also used as a database.
             </p>
 
             <p>
