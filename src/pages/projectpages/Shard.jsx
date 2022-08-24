@@ -7,17 +7,27 @@ const Article_Shard = function() {
             <h2>Treasure Seeker</h2>
             <p>
                 Treasure Seeker is a card game based on the late Runescape: Chronicle, made in Unity. At the game's current state, the game is a fully functional multiplayer CCG with
-                P2P direct challenge multiplayer, ELO-based server matchmaking, mod compatability, and unused enemy AI functionality (more details on this below). 
+                P2P direct challenge multiplayer, ELO-based server matchmaking, mod compatability, and configurable game AI. 
                 Preventing the game's release are a lack of intuitive UI/UX, a lack of meaningful singleplayer content, and a lack of theme. Though most core functionality for the 
                 game is in place, the idea and premise the game is based around is in the process of some reimagination.
             </p>
 
             <p>
-                For privacy reasons I won't show any code here as with the other projects but I will talk a lot about the my system design challenges throughout 
+                For privacy reasons I won't show any code here like the other projects but I will talk a lot about the my system design challenges throughout 
                 the development of this project.
             </p>
 
-            <h3>The Rules</h3>
+            <strong>Table of Contents</strong>
+            <ol>
+                <li><a href='#the_rules' className='url'>The Rules</a></li>
+                <li><a href='#origin' className='url'>Origin</a></li>
+                <li><a href='#40k' className='url'>40,000 Users vs "50 Requests Per Second"</a></li>
+                <li><a href='#cards' className='url'>Cards, Effects, and the Turnloop</a></li>
+                <li><a href='#robots' className='url'>Can Robots Play Cards?</a></li>
+                <li><a href='#network' className='url'>Connecting Players</a></li>
+            </ol>
+
+            <h3 id='the_rules'>The Rules</h3>
             <p>
                 None of this will make sense without at least a brief overview of how the game works. A game of Treasure Seeker consists of two players, internally referred to as 
                 mu1 and mu2. Each player has a set of properties like; 'Life', 'Armor', 'Power', 'Money', as well as the cards in their deck and hand. "Turns" are taken simultaneously. 
@@ -32,7 +42,7 @@ const Article_Shard = function() {
                 themselves- which made Treasure Seeker an interesting challenge, both technically and design-wise.
             </p>
 
-            <h3>Humble Origins</h3>
+            <h3 id='origin'>Origin</h3>
             <p>
                 Treasure Seeker started out as a spite project, a little discord bot made because someone told me it takes "a real professional to learn how to make a discord bot". 
                 While there have definitely been some impressive creations since that time (This project being one of them), it was a silly idea at the time when most discord bots were just 
@@ -47,7 +57,7 @@ const Article_Shard = function() {
                 if I had just made it with Unity in the first place, I think.
             </p>
 
-            <h3>40,000 Users vs "50 Requests Per Second"</h3>
+            <h3 id='40k'>40,000 Users vs "50 Requests Per Second"</h3>
             <p>
                 The Discord Bot was made in C#, initially utilizing <a href='https://github.com/discord-net/Discord.Net' className='url'>Foxbot's .NET wrapper for Discord</a>, but 
                 eventually moving to my own implementation after delving deeper in to the Discord API. Despite being a Discord Bot, most of the gamelogic actually connected to an external 
@@ -92,7 +102,7 @@ const Article_Shard = function() {
                 idea and set to work on porting the game into Unity, right and proper.
             </p>
             
-            <h3>Cards, Effects, and the Turnloop</h3>
+            <h3 id='cards'>Cards, Effects, and the Turnloop</h3>
             <p>
                 Getting used to Unity aside, I should probably talk about how the game itself actually worked. Card games always fascinated but I never really understood how I was 
                 supposed to start building one. At some point I even looked up leaked Hearthstone sourcecode (I didn't use it I swear). By the time I finally started working on the 
@@ -144,7 +154,7 @@ const Article_Shard = function() {
                 At the end of a Turnloop, the results are spat out and distributed to the match's two players. Then it waits for the next turn to begin, starting the cycle over.
             </p>
 
-            <h3>Can Robots Play Cards?</h3>
+            <h3 id='robots'>Can Robots Play Cards?</h3>
             <p>
                 A digital card game isn't complete without a computer opponent, and I wanted to ensure that players could still entertain themselves without an internet connection. 
                 <br/>
@@ -223,7 +233,7 @@ const Article_Shard = function() {
                 character, eliminating all who stood in it's path.
             </p> 
 
-            <h3>Connecting Players</h3>
+            <h3 id='network'>Connecting Players</h3>
 
             <p>
                 For multiplayer, players establish a TCP Connection with a .NET Core game server. A local MySQL server was also used as a database.
