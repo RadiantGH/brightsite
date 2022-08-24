@@ -35,7 +35,7 @@ const Projects = function() {
                 <ProjectArticle
                     article={'rabbit'}
                     title={'Rabbit Hole'}
-                    details={`A simple chrome extension about diving a little too deep into the Wikipedia. Start from a random article and make your way to your assigned destination. Chart a path through the Wikipedia rabbit hole.`}
+                    details={`A simple chrome extension game. Start from a random article and make your way to your assigned destination. Chart a path through the Wikipedia rabbit hole.`}
                 />  
             </div>
         </div> 
