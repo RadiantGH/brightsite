@@ -14,6 +14,7 @@ import {
   Route
 } from "react-router-dom";
 import Article_Shard from './pages/projectpages/Shard.jsx';
+import Article_Lint from './pages/projectpages/Lint.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -29,8 +30,13 @@ root.render(
 
         {/* Articles */}
         <Route path='shard' element={<Article_Shard/>} />
+        <Route path='lint' element={<Article_Lint/>} />
 
-        <Route path='/*' element={<p>404 | The light does not reach this place.</p>} />
+        <Route path='/*' element={
+          <div className='main-content'>
+            <p>404 | The light does not reach this place.</p>
+          </div>
+        } />
       </Routes>
       <SiteFooter/>
     </BrowserRouter>
