@@ -11,7 +11,7 @@ const Contact = function() {
                 Or my <a href='https://www.linkedin.com/in/ian-grepo/' className='url'>LinkedIn</a>
             </p>
             <br/>
-            Feel free to email me at <a href='iangrapeo@gmail.com' className='url'>iangrapeo@gmail.com</a>
+            Feel free to email me at <a href='mailto:iangrapeo@gmail.com' className='url'>iangrapeo@gmail.com</a>
             </div>
         </div> 
     );
