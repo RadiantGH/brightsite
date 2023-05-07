@@ -12,11 +12,6 @@ const Article_Shard = function() {
                 game is in place, the idea and premise the game is based around is in the process of some reimagination.
             </p>
 
-            <p>
-                For privacy reasons I won't show any code here like the other projects but I will talk a lot about the my system design challenges throughout 
-                the development of this project.
-            </p>
-
             <strong>Table of Contents</strong>
             <ol>
                 <li><a href='#the_rules' className='url'>The Rules</a></li>

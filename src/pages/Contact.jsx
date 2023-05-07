@@ -6,7 +6,7 @@ const Contact = function() {
         <div className='main-content'>
             <div>
             <p>
-                Find me on <a href='https://github.com/RadiantGH' className='url'>Github</a>
+                Find me on <a href='https://github.com/lanGrape' className='url'>Github</a>
                 <br/>
                 Or my <a href='https://www.linkedin.com/in/ian-grepo/' className='url'>LinkedIn</a>
             </p>
