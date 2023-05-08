@@ -10,7 +10,7 @@ const Talks = function() {
                 June 2022 - Sponsored by SingleSprout <br/>
                 JavaScript Is A Problem TypeScript Solved
                 <ReactAudioPlayer
-                src='api/assets/talk_typescript.mp3'
+                src='https://files.catbox.moe/lyo8x0.mp3'
                 controls
                 />
             </p>
