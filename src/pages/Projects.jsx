@@ -6,6 +6,10 @@ const Projects = function() {
     return (
         <div className='main-content'>
             <div>
+                I haven't had the time to write about all of my projects yet, I'll write about each one more over time!
+            </div>
+
+            <div>
                 <ProjectArticle
                     article={'shard'}
                     title={'Treasure Seeker'}

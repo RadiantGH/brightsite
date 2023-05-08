@@ -298,6 +298,8 @@ const Article_Shard = function() {
                 I didn't want to rely on the Steam servers as a middleman when push came to shove- not to mention I didn't know if I even wanted to release the game purely through 
                 Steam so I wanted to keep my options open. Since I was testing the game through Steam, however, it was still the server's responsibility to initially validate user 
                 Credentials through the Steam API just to keep things nice and simple.
+                <br/>
+                Not to mention... Most C# wrappers for the Steamworks API are way too functional- way too C++. Which is fine, but I'm using C# dammit, and I want it to feel like C#.
             </p>
         </div>
     );
